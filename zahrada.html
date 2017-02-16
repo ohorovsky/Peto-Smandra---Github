@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link href="style/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style/config.css">
+      <script src="js/prefixfree.min.js"></script>
+      <link rel="stylesheet" href="style/animsition.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  </head>
+  <body>
+      
+      
+      <nav class="navbar navbar-light bg-faded navbar-fixed-top">
+          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="line">---</span>
+          </button>
+          <div class="collapse navbar-toggleable-md container" id="navbarResponsive" >
+            <a class="navbar-brand" href="index.html" style="color:#F5F5F5">Lustenice</a>
+            <ul class="nav navbar-nav pull-right" >
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html#main" style="color:#F5F5F5">O Projektu <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="startConfig.html" style="color:#F5F5F5">Konfigurator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:#F5F5F5">Kontakt</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+       </nav>
+          
+      <div class="animsition" data-animsition-in-class="fade-in-right"
+              data-animsition-in-duration="1000">
+          <div id = "config">
+            <div class="container progress-bar">
+                
+                <div class="text-xs-center" id="example-caption-1">75%</div>
+                <progress class="progress progress-warning" value="75" max="100" aria-describedby="example-caption-1"></progress>
+                
+             <hr class="m-y-2">
+              
+          
+            </div>
+              <div class="container1">
+              <div class="row">
+              
+                  <div class="col-md-8">
+                      
+                      <div class="leftConfig">
+                          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval=false>
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                  
+                                  
+                                
+                              </ol>
+                              <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active" data-name="Gril1" data-price="51">
+                                  <img src="img/gril1.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item" data-name="Garage1" data-price="52">
+                                  <img src="img/garage1.jpg" alt="Second slide">  
+                                </div>
+                                  
+                                  
+                                
+                              </div>
+                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <i class="fa fa-chevron-left " aria-hidden="true"></i>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <i class="fa fa-chevron-right " aria-hidden="true"></i>
+                                  
+                              </a>
+                          </div>
+                          
+                      
+                      </div>
+                  
+                  </div>
+                  
+                  <div class="col-md-4">
+                      <div class="rightConfig">
+                          
+                          <h2>Doplnky</h2>
+                          <p>Vyber doplnkov</p>
+                          <p>Toto este musime domysliet, ze ako s tymi zahradnymi grilami a neviem cim... Mozme to riesit cez galeriu alebo len nejake miniatury obrazkov tych produktov a z nich si budu ludia vyberat alebo neviem... </p>
+                          <button class="btn btn-info" data-toggle="modal" data-target=".bd-example-modal-lg">Viac info</button>
+
+                            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">Detaily interieru</h4>
+                                          </div>
+                                        
+                                        <div class="modal-body">
+                                            <p>bla bla bla</p>
+                                            <p>bla bla bla...</p>
+                                          </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                          <button id="vyberDisp" class="btn btn-success">Vybrat</button>
+                          <hr class="m-y-2">
+                          <div class="sum">
+                              <h4>Suhrn:<button id="clear-cart" class="btn btn-danger pull-right">Reset</button></h4>
+                              <ul id="show-cart">
+                              </ul>
+                              <div class="spolu">Spolu: £ <span id="total-cart"></span></div>
+                              <a href="finalConfig.html" class="animsition-link" data-animsition-out-class="fade-out-left" data-animsition-out-duration="1000"><button class="btn btn-primary pull-right">Dalej <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+                              
+                              <a href="interier.html" class="animsition-link" data-animsition-out-class="fade-out-right" data-animsition-out-duration="1000"><button class="btn btn-warning pull-left "><i class="fa fa-arrow-left" aria-hidden="true"></i> Spat </button></a>
+                          
+                          </div>
+                      
+                      </div>
+                      
+                  
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+      </div>
+  
+      
+      
+      
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+      
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/animsition.min.js"></script>
+	
+    <script src="https://use.fontawesome.com/b70e0f0a83.js"></script>
+      <script src="js/imageMapResizer.min.js"></script>
+      <script src="js/jquery.imagemapster.min.js"></script>
+      <script src='js/shoppingCart.js'></script>
+    <script src="js/script.js"></script>
+      
+  </body>
+</html>

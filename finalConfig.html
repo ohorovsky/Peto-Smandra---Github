@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link href="style/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style/config.css">
+      <script src="js/prefixfree.min.js"></script>
+      <link rel="stylesheet" href="style/animsition.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+  </head>
+  <body>
+      
+      
+      <nav class="navbar navbar-light bg-faded navbar-fixed-top">
+          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="line">---</span>
+              
+          </button>
+          <div class="collapse navbar-toggleable-md container" id="navbarResponsive" >
+            <a class="navbar-brand" href="index.html" style="color:#F5F5F5">Lustenice</a>
+            <ul class="nav navbar-nav pull-right" >
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html#main" style="color:#F5F5F5">O Projektu <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="startConfig.html" style="color:#F5F5F5">Konfigurator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:#F5F5F5">Kontakt</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+       </nav>
+          
+      <div class="animsition" data-animsition-in-class="fade-in-up"
+              data-animsition-in-duration="1000">
+          <div id = "config">
+            <div class="container progress-bar">
+                
+                <div class="text-xs-center" id="example-caption-1">100%</div>
+                <progress class="progress progress-success" value="100" max="100" aria-describedby="example-caption-1"></progress>
+                
+             <hr class="m-y-2">
+              <h1 class="text-xs-center">Konfiguracia dokoncena!</h1>
+                <p>Konfiguracia Vasho domu bola uspesna! Tlacidlom RESET sa vratite na zaciatok konfiguracie. Tlacidlom Nezavazne rezervovat nam zaslete email s Vasou konfiguraciou kedy Vas budeme kontaktovat co najskor. Serus </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                        <div class="sum">
+                          <h4>Suhrn:</h4>
+                          <ul id="show-cart">
+                          </ul>
+                          <div class="spolu">Spolu: £ <span id="total-cart"></span></div>
+                          
+                          
+                          
+                        </div>
+                        
+                        <a href="zahrada.html" class="animsition-link" data-animsition-out-class="fade-out-right" data-animsition-out-duration="1000"><button class="btn btn-warning pull-left "><i class="fa fa-arrow-left" aria-hidden="true"></i> Spat </button></a>
+                        <a href="vyberDomu.html" class="animsition-link" data-animsition-out-class="fade-out-up" data-animsition-out-duration="1000"><button id="clear-cart" class="btn btn-danger pull-right">Reset</button></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                    <form id="form">
+                            <fieldset class="form-group name">
+                                <label for="name">Jméno</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Vaše jméno">      
+                            </fieldset>
+                            <fieldset class="form-group email">
+                                <label for="email">Emailová adresa</label>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Váš email">
+                                
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            
+                            <fieldset class="form-group">
+                                <label for="comment">Správa</label>
+                                <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                            </fieldset>
+                            <br>
+                        <button type="submit" id="submitButton" name="submit" class="btn btn-success pull-right">Rezervacia <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                          
+                            
+                        </form>
+                    </div>
+                
+                </div>
+                  
+          
+            </div>
+              
+          </div>
+      </div>
+      
+  
+      
+      
+      
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+      
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/animsition.min.js"></script>
+	
+    <script src="https://use.fontawesome.com/b70e0f0a83.js"></script>
+      <script src="js/imageMapResizer.min.js"></script>
+      <script src="js/jquery.imagemapster.min.js"></script>
+      <script src='js/shoppingCart.js'></script>
+    <script src="js/script.js"></script>
+      
+  </body>
+</html>

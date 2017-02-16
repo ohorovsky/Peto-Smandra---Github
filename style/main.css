@@ -1,0 +1,156 @@
+body{
+    
+    margin:0;
+    padding:0;
+    opacity: 1;
+    transition: 1s opacity;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body.fade-out{
+    opacity: 0;
+    transition: none;
+}
+
+
+
+
+#header{
+    
+    
+    height:100vh;
+    position:relative;
+    background-image:url("../img/jumbotron2.png");
+    background-position:50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -3;
+}
+
+.logo{
+    
+    position: absolute;
+    max-width:25%;
+    top:5%;
+    left:38%;
+    z-index: -2;
+    
+}
+
+.mur{
+    
+    background-image: url("../img/jumbotron-mur.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:0% 0%;
+    height:100vh;
+    min-width: 100%;
+    position: absolute;
+    top:57%;
+    left:0;
+    z-index: -1;
+    
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    padding:20px;
+    background-color: rgba(0,0,0,0.3);
+    
+    transition: 0.25s;
+    
+    
+}
+.navbar li{
+    margin-right:30px;
+}
+.navbar-fixed-top li{
+    
+    border-top: 5px solid #000;
+    margin-top:-5px;
+    transition: 0.25s;
+}
+
+
+
+.navbar li:hover{
+    
+    border-top: 5px solid #C06014;
+    
+    
+}
+
+.navbar-toggler{
+    
+    position:relative;
+    border-color:white !important;
+    color:white !important;
+}
+
+
+
+
+
+/* MAIN */
+
+#main{
+    padding-top: 100px;
+    transition: 0.25s;
+    
+    background: #F5F5F5;
+}
+
+#main .configBtn{
+    
+    color: #F5F5F5;
+    background-color: #C06014;
+    border:none;
+    padding:10px;
+    transition: 0.25s;
+}
+#main .configBtn:hover{
+    
+    background-color: #000;
+    
+}
+.mapa{
+    
+ margin:100px 0px;
+    
+}
+
+/* Media Queries */
+
+@media (max-width: 400px) {
+    #header{
+        height:100vh;
+        position:relative;
+        background-image:url("../img/jumbotronMobile.png");
+        background-position:50% 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+        }
+    
+    .logo,.mur{
+        display: none;
+    }
+    
+    
+}
+@media (max-width: 991px){
+    
+    .navbar .pull-right{
+        float:none;
+        text-align: center;
+    }
+    
+    .navbar{
+        background-color:rgba(0,0,0,1) !important;
+        
+    }
+}
